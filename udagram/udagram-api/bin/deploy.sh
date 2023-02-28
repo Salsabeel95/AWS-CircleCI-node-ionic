@@ -7,9 +7,10 @@ eb setenv POSTGRES_HOST=$POSTGRES_HOST
 eb setenv AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
 eb setenv AWS_BUCKET=$AWS_BUCKET
 eb setenv AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION AWS_PROFILE=$AWS_PROFILE
-eb setenv URL=$URL JWT_SECRET=$JWT_SECRET
+# eb setenv URL=$URL 
+eb setenv JWT_SECRET=$JWT_SECRET
 # http://udagram-sals.s3-website-us-east-1.amazonaws.com/ 
 
-eb deploy udagram-api-env
+eb deploy $EB_ENV_NAME
 
 # cd ..
