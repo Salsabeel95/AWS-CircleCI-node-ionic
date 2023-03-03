@@ -1,8 +1,8 @@
 branch-defaults:
   default:
-    environment: udagram-api-2-dev2
+    environment: Udagram-env
 global:
-  application_name: udagram-api-2
+  application_name: udagram
   branch: null
   default_ec2_keyname: null
   default_platform: Node.js 14 running on 64bit Amazon Linux 2
