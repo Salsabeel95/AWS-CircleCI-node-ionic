@@ -1,6 +1,6 @@
 cd www
 # check if the env variables in eb env have been set or not yet
-if [[ -z "$AWS_ACCESS_KEY_ID"]]; then
+if [[ -z "$AWS_ACCESS_KEY_ID" ]]; then
         echo "AWS_ACCESS_KEY_ID is not set and so the others"
         eb list
         eb use $EB_ENV_NAME
