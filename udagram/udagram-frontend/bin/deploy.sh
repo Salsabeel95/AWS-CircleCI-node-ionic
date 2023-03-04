@@ -28,7 +28,7 @@
 #     aws s3 website s3://$WEB_BUCKET_NAME --index-document index.html
 # fi
     # 5. 
-    echo "Upload you website"
-aws s3 cp --recursive ./www s3://$WEB_BUCKET_NAME/
+    echo "Upload the website"
+aws s3 cp --recursive ./www s3://udagram-sals/ --acl public-read
 #     # The trailing / at the end of the URL is important. 
-# aws s3 cp --cache-control="max-age=0, no-cache, no-store, must-revalidate" ./www/index.html s3:/$WEB_BUCKET_NAME
+aws s3 cp --cache-control="max-age=0, no-cache, no-store, must-revalidate" ./www/index.html s3://udagram-sals

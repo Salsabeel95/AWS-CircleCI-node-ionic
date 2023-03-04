@@ -48,13 +48,14 @@ jobs:
           name: API Deploy
           command: |
             echo "Deploy the backend API"
-            echo $EB_ENV_NAME
             npm run api:deploy
 
     # install dependencies in the frontend app
       # - run:
       #     name: Install Frontend Dependencies
       #     command: |
+      #       npm cache clean --force
+      #       rm -rf package-lock.json
       #       npm run frontend:install
       # # Build the frontend app
       # - run:
