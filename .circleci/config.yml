@@ -25,7 +25,7 @@ jobs:
             echo $(node --version)
             echo "NPM --version" 
             echo $(npm --version)
-      # Install dependencies in the the backend API          
+     # Install dependencies in the the backend API          
       # - run:
       #     name: Install API Dependencies
       #     command: |
@@ -51,7 +51,7 @@ jobs:
       #       echo $EB_ENV_NAME
       #       npm run api:deploy
 
-      # install dependencies in the frontend app
+    # install dependencies in the frontend app
       - run:
           name: Install Front-End Dependencies
           command: |
