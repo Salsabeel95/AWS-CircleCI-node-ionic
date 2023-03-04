@@ -13,8 +13,8 @@ When a new commit has been pushed to the main branch of the repository,That's tr
 ![circleci aws diagram](./images/circleci%20aws%20diagram.png)
 
 
-<!-- - screenshot of the CricleCi build last state
-![circleci success]() -->
+- screenshot of the CricleCi build last state
+![circleci success](../screenshots/circleci%20success.PNG)
 
 
 - All the secrets found in the application are configured inside CircleCi and passed to the application in EB.

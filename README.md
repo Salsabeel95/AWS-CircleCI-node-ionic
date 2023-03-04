@@ -34,6 +34,7 @@
 - infrastructure description
 - app dependencies
 - the pipeline process
+
 **All info about these are found in the [documentation](https://github.com/Salsabeel95/AWS-CircleCI-node-ionic/tree/master/documentation) folder.**
 
 
