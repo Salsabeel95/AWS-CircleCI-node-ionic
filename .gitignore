@@ -1,9 +1,0 @@
-node_modules
-.env
-www
-udagram/udagram-api/package-lock.json
-udagram/set_env.sh
-
-documentation
-screenshots
-README.md
