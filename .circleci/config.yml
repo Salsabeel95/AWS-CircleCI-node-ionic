@@ -52,10 +52,12 @@ jobs:
 
     # install dependencies in the frontend app
       - run:
-          name: Install Frontend Dependencies
+          name: pre install Frontend Dependencies
           command: |
             npm cache clean --force
-            rm -rf package-lock.json
+      - run:
+          name: Install Frontend Dependencies
+          command: |
             npm run frontend:install
       # Build the frontend app
       - run:

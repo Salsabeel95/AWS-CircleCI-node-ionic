@@ -1,7 +1,7 @@
 node_modules
 .env
 www
-package-lock.json
+udagram/udagram-api/package-lock.json
 udagram/set_env.sh
 
 documentation
