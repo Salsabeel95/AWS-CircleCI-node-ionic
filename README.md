@@ -1,7 +1,7 @@
 
 # 🐱‍💻 Hosting a Full-Stack Application
 
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/aml-fakhry/aws-deployment-process-project/12/workflows/d96c4a51-383c-49db-b110-996a3178dbe0) 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Salsabeel95/AWS-CircleCI-node-ionic/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Salsabeel95/AWS-CircleCI-node-ionic/tree/master)
 
 ![AMS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 
@@ -34,7 +34,7 @@
 - infrastructure description
 - app dependencies
 - the pipeline process
-**All info about these are found in the [docs](https://github.com/Salsabeel95/AWS-CircleCI-node-ionic/tree/master/documentation) folder.**
+**All info about these are found in the [documentation](https://github.com/Salsabeel95/AWS-CircleCI-node-ionic/tree/master/documentation) folder.**
 
 
 ## Built With
