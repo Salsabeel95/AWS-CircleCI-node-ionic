@@ -65,12 +65,12 @@ jobs:
           command: |
             echo "Build the frontend app"
             npm run frontend:build
-      # # Deploy the frontend app         
-      # - run:
-      #     name: Frontend Deploy
-      #     command: |
-      #       echo "Build the frontend app"
-      #       npm run frontend:deploy
+      # Deploy the frontend app         
+      - run:
+          name: Frontend Deploy
+          command: |
+            echo "Build the frontend app"
+            npm run frontend:deploy
           
 workflows:
   udagram:
