@@ -53,18 +53,23 @@ jobs:
 
     # install dependencies in the frontend app
       - run:
-          name: Install Front-End Dependencies
+          name: Install Frontend Dependencies
           command: |
             npm run frontend:install
+      # checking the frontend app directory
+      - run:
+          name: Checking Frontend directory
+          command: |
+            ls
+            echo "Build the frontend app"
       # Build the frontend app
       - run:
-          name: Front-End Build
+          name: Frontend Build
           command: |
-            echo "Build the frontend app"
             npm run frontend:build
       # Deploy the frontend app         
       - run:
-          name: Front-End Deploy
+          name: Frontend Deploy
           command: |
             echo "Build the frontend app"
             npm run frontend:deploy
