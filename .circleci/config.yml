@@ -50,12 +50,12 @@ jobs:
       #       echo "Deploy the backend API"
       #       npm run api:deploy
 
-            # npm cache clean --force
-            # rm -rf package-lock.json
     # install dependencies in the frontend app
       - run:
           name: Install Frontend Dependencies
           command: |
+            npm cache clean --force
+            rm -rf package-lock.json
             npm run frontend:install
       # Build the frontend app
       - run:
