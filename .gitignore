@@ -3,3 +3,7 @@ node_modules
 www
 package-lock.json
 udagram/set_env.sh
+
+documentation
+screenshots
+README.md
