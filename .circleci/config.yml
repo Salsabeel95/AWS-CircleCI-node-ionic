@@ -26,53 +26,48 @@ jobs:
             echo "NPM --version" 
             echo $(npm --version)
      # Install dependencies in the the backend API          
-      # - run:
-      #     name: Install API Dependencies
-      #     command: |
-      #       echo "Install dependencies in the the backend API  "
-      #       npm run api:install
-      # # test the backend API      
-      # - run:
-      #     name: API Test
-      #     command: |
-      #       echo "test the backend API"
-      #       npm run api:test
-      # # Build the backend API      
-      # - run:
-      #     name: API Build
-      #     command: |
-      #       echo "Build the backend API"
-      #       npm run api:build
-      # Deploy the backend API      
-      # - run:
-      #     name: API Deploy
-      #     command: |
-      #       echo "Deploy the backend API"
-      #       echo $EB_ENV_NAME
-      #       npm run api:deploy
+      - run:
+          name: Install API Dependencies
+          command: |
+            echo "Install dependencies in the the backend API  "
+            npm run api:install
+      # test the backend API      
+      - run:
+          name: API Test
+          command: |
+            echo "test the backend API"
+            npm run api:test
+      # Build the backend API      
+      - run:
+          name: API Build
+          command: |
+            echo "Build the backend API"
+            npm run api:build
+      Deploy the backend API      
+      - run:
+          name: API Deploy
+          command: |
+            echo "Deploy the backend API"
+            echo $EB_ENV_NAME
+            npm run api:deploy
 
     # install dependencies in the frontend app
-      - run:
-          name: Install Frontend Dependencies
-          command: |
-            npm run frontend:install
-      # checking the frontend app directory
-      - run:
-          name: Checking Frontend directory
-          command: |
-            ls
-            echo "Build the frontend app"
-      # Build the frontend app
-      - run:
-          name: Frontend Build
-          command: |
-            npm run frontend:build
-      # Deploy the frontend app         
-      - run:
-          name: Frontend Deploy
-          command: |
-            echo "Build the frontend app"
-            npm run frontend:deploy
+      # - run:
+      #     name: Install Frontend Dependencies
+      #     command: |
+      #       npm run frontend:install
+      # # Build the frontend app
+      # - run:
+      #     name: Frontend Build
+      #     command: |
+      #       echo "Build the frontend app"
+      #       npm run frontend:build
+      # # Deploy the frontend app         
+      # - run:
+      #     name: Frontend Deploy
+      #     command: |
+      #       echo "Build the frontend app"
+      #       npm run frontend:deploy
           
 workflows:
   udagram:

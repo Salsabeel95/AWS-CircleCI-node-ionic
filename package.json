@@ -1,4 +1,5 @@
 {
+    "description": " Full-Stack application built for a retailer and deploy it to a cloud service (AWS) and make CI/CD pipeline with CircleCI",
     "scripts": {
         "frontend:install": "cd udagram/udagram-frontend && npm install -f",
         "frontend:start": "cd udagram/udagram-frontend && npm run start",
