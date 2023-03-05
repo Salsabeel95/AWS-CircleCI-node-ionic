@@ -37,7 +37,11 @@
 
 **All info about these are found in the [documentation](https://github.com/Salsabeel95/AWS-CircleCI-node-ionic/tree/master/documentation) folder.**
 
-
+## Udacity review:
+![review 1](./screenshots/review/1.PNG)
+![review 2](./screenshots/review/2.PNG)
+![review 3](./screenshots/review/3.PNG)
+![review 4](./screenshots/review/4.PNG)
 ## Built With
 
 - [Angular](https://angular.io/) - Single Page Application Framework
